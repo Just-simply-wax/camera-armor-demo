@@ -1,0 +1,38 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 模型权重（体积大，且是课程提供，不入库）
+weights/
+*.pt
+*.onnx
+*.engine
+*.torchscript
+
+# 实验数据与产物
+data/
+runs/
+*.mp4
+*.avi
+*.mov
+!assets/*.mp4
+
+# 图片：保留 assets/ 里的截图，其余不追踪
+*.jpg
+*.jpeg
+*.png
+*.bmp
+!assets/*.jpg
+!assets/*.png
+!docs/*.png
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

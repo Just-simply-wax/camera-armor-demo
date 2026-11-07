@@ -1,0 +1,9 @@
+# Python 依赖
+# 注意：torch 不要写在这里用默认源装（那会装成 CPU 版）。
+# 先按 README 用 CUDA 源单独装 torch，再执行：pip install -r requirements.txt
+
+numpy>=1.24
+opencv-python>=4.8
+ultralytics>=8.4.174
+imageio-ffmpeg>=0.5.0     # 没有系统 ffmpeg 时用它转码
+matplotlib>=3.7           # 可选：画实验对比图
