@@ -1,0 +1,9 @@
+# case: mat
+time: 2026-11-07 23:32:25
+--- OpenCV Mat / numpy 的内存语义（不需要相机）---
+  a[0,0]=255 后：b[0,0]=255（看到 255 说明共用内存），c[0,0]=0（副本不受影响）
+  a.data 指针=0x6459269DD2A0，b.data 指针=0x6459269DD2A0（相同），c.data 指针=0x645926C419A0（不同）
+  结论：`b = a` 不复制数据；`a.copy()` 才复制。
+  相机取图同理：MV_CC_GetImageBuffer 给的指针在 FreeImageBuffer 之后失效，
+  所以必须在归还之前把数据复制出来（本项目的 Camera.grab 已经这么做了）。
+  RSS=105.0 MB

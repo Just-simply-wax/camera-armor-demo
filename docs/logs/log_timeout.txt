@@ -1,0 +1,8 @@
+# case: timeout
+time: 2026-11-07 23:32:23
+--- 取流超时：把曝光拉到很长，用很短的 timeout 取图 ---
+  曝光设为 200000 us，timeout=50 ms
+  第 1 次：取流超时（timeout=50 ms） → MV_E_NODATA（ret=0x80000007）
+  第 2 次：取流超时（timeout=50 ms） → MV_E_NODATA（ret=0x80000007）
+  恢复曝光 2000 us 后可以正常取图 ✅
+  RSS=113.2 MB

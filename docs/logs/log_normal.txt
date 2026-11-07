@@ -1,0 +1,10 @@
+# case: normal
+time: 2026-11-07 23:32:14
+--- 正常取流 200 帧，每帧都 FreeImageBuffer ---
+  第   0 帧 RSS=99.8 MB
+  第  50 帧 RSS=113.2 MB
+  第 100 帧 RSS=113.2 MB
+  第 150 帧 RSS=113.2 MB
+  RSS: 99.8 → 113.2 MB（差值 13.4 MB）
+  结论：内存平稳，没有泄漏
+  RSS=113.2 MB

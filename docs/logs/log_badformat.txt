@@ -1,0 +1,7 @@
+# case: badformat
+time: 2026-11-07 23:32:24
+--- 错误/不支持的图像格式 ---
+  设置 PixelFormat=NotExistFormat → MV_E_PARAMETER（0x80000004）
+  当前格式未被破坏：0x01080009 → 0x01080009
+  设置 PixelFormat=BGR8 → MV_E_PARAMETER（0x80000004）
+  RSS=113.2 MB
